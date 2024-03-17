@@ -1,0 +1,27 @@
+.overlay{
+    
+    width: 769px;
+    height:400px;
+     background: linear-gradient(180deg, rgba(66, 140, 171, 0.58) 47.6%, rgba(169, 221, 241, 0.58) 100%);
+    ;
+   border-top-right-radius: 20px;
+border-bottom-left-radius: 200px;
+}
+.container {
+    position: relative;
+    display: inline-block; /* Ensure the container wraps around its contents */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 80px;
+    left: 55px;
+    width: 650px; /* Make the overlay cover the entire container */
+    height: 400px;
+    background-color: transparent; /* Semi-transparent white overlay */
+    opacity: 58%;
+  }
+  
+.hero{
+    position: relative;
+}
