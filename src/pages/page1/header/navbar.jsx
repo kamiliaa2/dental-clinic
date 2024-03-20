@@ -1,55 +1,117 @@
 import React from 'react';
 import './navbar.css';
-import { FaHome ,FaInstagram,FaFacebook, FaTwitter,} from 'react-icons/fa';
-import { MdAddCall } from "react-icons/md";
+import { FaHome, FaInstagram, FaFacebook, FaTwitter, } from 'react-icons/fa';
+import { MdAddIcCall } from "react-icons/md";
 
 const Navbar = () => {
+  const nav = [
+    {
+      name: "Home",
+      path: "/"
+    },
+    {
+      name: "About us",
+      path: "/service"
+    },
+    {
+      name: "Services",
+      path: "/marketplace"
+    },
+    {
+      name: "Doctord",
+      path: "/me"
+    },
+    {
+      name: "Witnesses",
+      path: "/me"
+    },
+    {
+      name: "Contact us",
+      path: "/me"
+    },
+  ]
+  
+  const socialMedia = [
+    {
+      name: "facebook",
+      path: "#",
+      icon : () =><li>
+        <FaFacebook color='white'>FaFacebook</FaFacebook>
+      </li>
+    },
+    {
+      name: "instagram",
+      path: "#",
+      icon : () =><li>
+        <FaInstagram color='white'>FaInstagram</FaInstagram>
+      </li>
+    },
+    {
+      name: "twitter",
+      path: "#",
+      icon : () =><li>
+        <FaTwitter color='white'>FaTwitter</FaTwitter>
+      </li>}
+    ,
+  ]
   return (
     
-    <header>
-      <nav className="navbar">
-        <div className="TOP-section">
-        <div className='icon-container'>
-        <li> <FaInstagram color='white'  /></li>
-        <li> <FaFacebook color='white'/></li>
-        <li> <FaTwitter color='white' /></li>
-        <li><MdAddCall color='white'/></li>
-       
+    
+    <div className='navbar-container' >
+      <div className='navbar-top'>
+        <div className='contact'>
+        <MdAddIcCall />
+          <p>+21305-55-07-18-99</p>
         </div>
-        </div>
-        <div className='MED-section'>
-        <img className="logo" src="#" alt="logo" />
-          <div className='line'></div>
-          
-        </div>
-      </nav>
-      <nav className='nav'>
         <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Doctors</a></li>
-            <li><a href="#">Witnesses</a></li>
-            <li><a href="#">Contact us</a></li>
-                      
-            <div class="container">
-  <div>
-    <button class="log">Login</button>
-    <button class="reg">Sign up</button>
-    
-  </div>
-</div>
-
-          
-          </ul>
+          <div className='socialMedia'>
+          {
+              socialMedia.map((n, index) => {
+                return (<a href={n.path}>
+                    {n.icon()}
+                </a>)
+              })
+            }
+          </div>
         </div>
-      </nav>
-    </header>
-      
+      </div>
+      <div className='white-band'></div> {/* Bande blanche */}
+      <div className='navbar-middle'>
+        <hr className='gray-line' /> {/* Ligne grise */}
+      </div>
     
-   
+    
+      <div className='navbar-container-down'>
+        
+        <div>
+  
+          <img src="" alt="lgo" />
+        </div>
+        <div className='navbar-right'>
+          <nav className='navbar_navs '>
+            {
+              nav.map((n, index) => {
+                return (<a href={n.path}>
+                  <li>
+                    {n.name}
+                  </li>
+                </a>)
+              })
+            }
+          </nav>
+          <div className='container'>
+            <button className='log'>login</button>
+            <button className='reg'>signup</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
   );
 };
 
 export default Navbar
+
+

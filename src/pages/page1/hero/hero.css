@@ -1,27 +1,45 @@
-.overlay{
-    
-    width: 769px;
-    height:400px;
-     background: linear-gradient(180deg, rgba(66, 140, 171, 0.58) 47.6%, rgba(169, 221, 241, 0.58) 100%);
-    ;
-   border-top-right-radius: 20px;
-border-bottom-left-radius: 200px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 .container {
     position: relative;
+    width: 100%;
     display: inline-block; /* Ensure the container wraps around its contents */
   }
-  
+  .container img{
+    width: 100%;
+  }
   .overlay {
     position: absolute;
     top: 80px;
     left: 55px;
-    width: 650px; /* Make the overlay cover the entire container */
+   /* Make the overlay cover the entire container */
     height: 400px;
     background-color: transparent; /* Semi-transparent white overlay */
     opacity: 58%;
+    z-index: 0;
+    width: 700px;
+    height:400px;
+     background:  linear-gradient(180deg, rgba(66, 140, 171, 0.58) 47.6%,rgba(169, 221, 241, 0.58) 100%);
+     border-top-right-radius: 20px;
+     border-bottom-left-radius: 200px;
+     color: red;
+        
   }
   
 .hero{
     position: relative;
 }
+ .title1{
+font-size: 45px;
+font-weight: 700;
+line-height: 67px;
+letter-spacing: 0.03em;
+text-align: center;
+color:black; 
+z-index: 9999;
+font-family: "Roboto Bold", "Roboto", sans-serif;
+}
+
+
+
+ 
