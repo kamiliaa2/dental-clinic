@@ -1,7 +1,7 @@
 import React from 'react';
 import './navbar.css';
 import { FaHome, FaInstagram, FaFacebook, FaTwitter, } from 'react-icons/fa';
-import { MdAddIcCall } from "react-icons/md";
+import { TbPhoneCall } from "react-icons/tb";
 
 const Navbar = () => {
   const nav = [
@@ -18,7 +18,7 @@ const Navbar = () => {
       path: "/marketplace"
     },
     {
-      name: "Doctord",
+      name: "Doctors",
       path: "/me"
     },
     {
@@ -60,7 +60,7 @@ const Navbar = () => {
     <div className='navbar-container' >
       <div className='navbar-top'>
         <div className='contact'>
-        <MdAddIcCall />
+        <TbPhoneCall />
           <p>+21305-55-07-18-99</p>
         </div>
         <div>
@@ -85,7 +85,7 @@ const Navbar = () => {
         
         <div>
   
-          <img src="" alt="lgo" />
+          <img src="" alt="logo" />
         </div>
         <div className='navbar-right'>
           <nav className='navbar_navs '>
@@ -101,7 +101,7 @@ const Navbar = () => {
           </nav>
           <div className='container'>
             <button className='log'>login</button>
-            <button className='reg'>signup</button>
+            <button className='reg'> sign up </button>
             
           </div>
         </div>

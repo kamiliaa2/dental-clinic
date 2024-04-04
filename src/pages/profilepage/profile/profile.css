@@ -1,0 +1,34 @@
+.pagep{
+    display: flex
+    
+}
+.cntnr{
+    width: 100dvw;
+  
+    background-color: rgba(237, 240, 244, 1);
+}
+
+.profilee{
+    width: 100%;
+    height: 50px;
+    padding-left: 110px;
+    background:white ;
+    color: black;
+ 
+}
+ .my-profile h1{
+    background-color: white ;
+   margin-top: 50px;
+   margin-left: 80px;
+   width: 90%;
+   height: 100vh;
+   text-align: center;
+  
+   
+ }
+
+ .formulaire{
+    background-color: gray;
+ }
+
+
