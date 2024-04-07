@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+
 .pagep{
     display: flex
     
@@ -16,19 +22,80 @@
     color: black;
  
 }
- .my-profile h1{
-    background-color: white ;
-   margin-top: 50px;
+.my-profile{
+    background-color:  #fff;
+    width: 90%;
+   height: 115vh; 
+  
+   margin: 40px;
    margin-left: 80px;
-   width: 90%;
-   height: 100vh;
+   position: relative;
+   padding-bottom: 0;
    text-align: center;
+
+}
+
+ .my-profile h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    padding-top: 30px;
+
+ }
+ .my-profile hr{
+    color: rgba(237, 240, 244, 1);
+    width: 1100px;
+    margin: 20px;
+    margin-left:70px ;
+
   
    
+    
  }
 
  .formulaire{
-    background-color: gray;
+    background-color: rgba(237, 240, 244, 1);
+    width: 95%;
+    height: 100vh;
+    margin-left:30px;
+    display: flex;
+  
+   
  }
+.infos{
+    display: flex;
+   align-items: center;
+   padding-left:100px ;
+}
+
+
+
+
+.infos h2 {
+  color: #333;
+ margin: 100px;
+ 
+}
+
+.infos ul {
+  list-style-type: none;
+ 
+}
+
+.infos li {
+  margin-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+
+.left img{
+    position: absolute;
+   
+}
+
+
 
 

@@ -25,7 +25,7 @@ const Hero = () => {
         </div> 
       <p className='titre'>Discover our services</p>
       <p className='soustitre'> Discover a comprehensive range of services designed to meet all your dental needs under one roof</p>
-      <a href="#" className='click'>click</a>
+      <a href="/contact" className='click'>click</a>
      </div>
      
      <div className='box2'>
